@@ -1,27 +1,52 @@
-# 示例，请根据你的实际项目进行调整
-FROM node:18-alpine AS builder
+# ========================
+# Build stage
+# ========================
+FROM node:22-alpine AS builder
+
+# 设置工作目录
+WORKDIR /app
+
+# 复制依赖声明
+COPY package.json package-lock.json* pnpm-lock.yaml* ./
+
+# 安装 pnpm（如果你用 pnpm）
+RUN npm install -g pnpm
+
+# 安装依赖
+RUN pnpm install --frozen-lockfile
+
+# 复制项目文件
+COPY . .
+
+# 编译项目（适用于 Next.js）
+RUN pnpm build
+
+
+
+# ========================
+# Production stage
+# ========================
+FROM node:22-alpine AS runner
+
+# 创建非 root 用户
+RUN addgroup --system --gid 1001 nodejs && \
+    adduser --system --uid 1001 nextjs
 
 WORKDIR /app
 
-# 将生成的 .env.production 文件复制到容器中
-COPY .env.production .env.production
+ENV NODE_ENV=production
 
-# 复制源代码和配置文件
-COPY . .
+# 复制运行所需文件
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package.json ./package.json
 
-# 构建前端应用
-RUN npm install
-RUN npm run build
+# 使用非 root 用户运行
+USER nextjs
 
-# Nginx 阶段
-FROM nginx:alpine
-COPY --from=builder /app/.next/static /usr/share/nginx/html/.next/static
-COPY --from=builder /app/public /usr/share/nginx/html/public
-COPY --from=builder /app/.next/standalone /usr/share/nginx/html
-# 确保你的 nginx 配置能正确处理前端路由
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# 默认端口（Next.js 默认监听 3000）
+EXPOSE 12005
 
-# 暴露端口
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
+# 启动应用
+CMD ["pnpm", "start"]
