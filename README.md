@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 广丰金流对接示例源码
+# 跑分、国际跑分、东南亚跑分、非洲跑分、代收、代付、金流
+# 文档地址: https://docs.guangfunds.com/
 
-## Getting Started
+# 系统完整源码和技术服务联系Telegram: [@guangfunds](https://t.me/guangfunds)
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 功能预览
+## 后台管理
+![admin-preview](./docs/images/admin-preview/admin-preview-1.png)
+![admin-preview](./docs/images/admin-preview/admin-preview-2.png)
+![admin-preview](./docs/images/admin-preview/admin-preview-3.png)
+![admin-preview](./docs/images/admin-preview/admin-preview-4.png)
+![admin-preview](./docs/images/admin-preview/admin-preview-5.png)
+![admin-preview](./docs/images/admin-preview/admin-preview-6.png)
+![admin-preview](./docs/images/admin-preview/admin-preview-7.png)
+![admin-preview](./docs/images/admin-preview/admin-preview-8.png)
+![admin-preview](./docs/images/admin-preview/admin-preview-9.png)
+![admin-preview](./docs/images/admin-preview/admin-preview-10.png)
+![admin-preview](./docs/images/admin-preview/admin-preview-11.png)
+![admin-preview](./docs/images/admin-preview/admin-preview-12.png)
+![admin-preview](./docs/images/admin-preview/admin-preview-13.png)
+![admin-preview](./docs/images/admin-preview/admin-preview-14.png)
+![admin-preview](./docs/images/admin-preview/admin-preview-15.png)
+![admin-preview](./docs/images/admin-preview/admin-preview-16.png)
+![admin-preview](./docs/images/admin-preview/admin-preview-17.png)
+![admin-preview](./docs/images/admin-preview/admin-preview-18.png)
+![admin-preview](./docs/images/admin-preview/admin-preview-19.png)
+![admin-preview](./docs/images/admin-preview/admin-preview-20.png)
+## 收银页
+![land-preview](./docs/images/land-preview/land-preview-1.png)
+![land-preview](./docs/images/land-preview/land-preview-2.png)
+![land-preview](./docs/images/land-preview/land-preview-3.png)
+## 对接文档
+![docs-preview](./docs/images/docs-preview/docs-preview-1.png)
+![docs-preview](./docs/images/docs-preview/docs-preview-2.png)
+![docs-preview](./docs/images/docs-preview/docs-preview-3.png)
+![docs-preview](./docs/images/docs-preview/docs-preview-4.png)
+![docs-preview](./docs/images/docs-preview/docs-preview-5.png)
+![docs-preview](./docs/images/docs-preview/docs-preview-6.png)
