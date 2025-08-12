@@ -2,7 +2,8 @@
 # 跑分、国际跑分、东南亚跑分、非洲跑分、代收、代付、金流
 # 文档地址: https://docs.guangfunds.com/
 
-# 系统完整源码和技术服务联系Telegram: [@guangfunds](https://t.me/guangfunds)
+<!-- # 系统完整源码和技术服务联系Telegram: [@guangfunds](https://t.me/guangfunds) -->
+# 系统完整源码和技术服务联系Telegram: [@guangfeng01](https://t.me/guangfeng01)
 
 # 功能预览
 ## 后台管理
