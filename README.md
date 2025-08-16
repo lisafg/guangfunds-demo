@@ -4,6 +4,7 @@
 
 <!-- # 系统完整源码和技术服务联系Telegram: [@guangfunds](https://t.me/guangfunds) -->
 # 系统完整源码和技术服务联系Telegram: [@guangfeng01](https://t.me/guangfeng01)
+# 进入讨论频道: [https://t.me/guangfengpay](https://t.me/guangfengpay)
 
 # 功能预览
 ## 后台管理
